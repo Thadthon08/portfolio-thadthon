@@ -1,0 +1,60 @@
+{
+  "title": "Welcome",
+  "description": "Switch language using the buttons below.",
+  "menu": {
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact me",
+    "hire": "Hire Me"
+  },
+  "profile": {
+    "greeting": "Hi I'm",
+    "name": "Thadthon Sangkhachon",
+    "roles": ["Software Engineer", "Network Engineer"],
+    "hire": "Hire Me",
+    "download_cv": "Download CV",
+    "experiences": "Experiences",
+    "projects": "Project done",
+    "repositories": "GitHub Repositories"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Let me introduce myself",
+    "intro_heading": "Hi, I'm a Computer Engineering Graduate",
+    "intro_description": "I recently graduated from Suranaree University of Technology with a Bachelor's degree in Computer Engineering. I’m passionate about developing web applications and exploring computer networks. During my time in university, I built multiple academic and personal projects using technologies like React, Angular, Node.js, Gin Framework, and Express.js. I am currently expanding my skills in backend and Devops development, focusing on Golang. I'm also exploring software design principles such as Clean Architecture and design patterns to build maintainable and scalable applications.",
+    "download_cv": "Download CV",
+    "skills": "My Skills"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Explore my latest work & side projects",
+    "view_project": "View Project →"
+  },
+  "projects": {
+    "hr_onboarding": {
+      "title": "HR Employee Onboarding System",
+      "description": "A web app that helps HR streamline the onboarding process for new hires. Includes evaluation tools and automatic email notifications to keep everything organized and on track."
+    },
+    "portfolio_theme": {
+      "title": "Animated Portfolio Website",
+      "description": "A personal portfolio site I built to showcase my background and projects. Emphasizes smooth animation and interactivity using modern frontend technologies."
+    },
+    "sut_attendance": {
+      "title": "SUT Online Attendance System",
+      "description": "A QR-based attendance system where students can check in using Line login and receive status updates via Line OA. Teachers can create classrooms, generate QR codes, and review attendance data through a custom dashboard."
+    },
+    "cat_voice": {
+      "title": "Cat’s Voice",
+      "description": "A platform that connects stray cats with potential adopters. Includes case management, adoption events, donor tracking, and real-time status updates — all through a clean, easy-to-use interface."
+    },
+    "key_store": {
+      "title": "Online Software Key Store",
+      "description": "A software key e-commerce site developed for a Software Engineering course. Users can browse products, apply discount codes, and check out easily. Admins can manage the product list, monitor orders, and track payment status — all from a centralized dashboard. A great learning experience for both frontend and backend development."
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Feel free to reach out with any questions, project ideas, or to simply connect. Use the form below to send a message. I'll respond ASAP."
+  }
+}

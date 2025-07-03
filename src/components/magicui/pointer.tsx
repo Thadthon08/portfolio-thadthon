@@ -8,7 +8,9 @@ import {
   useMotionValue,
 } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { JSX } from "react/jsx-runtime";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface PointerProps extends Omit<HTMLMotionProps<"div">, "ref"> {}
 
 /**

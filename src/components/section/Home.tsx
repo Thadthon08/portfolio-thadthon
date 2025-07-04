@@ -126,7 +126,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-4">
             <a
               href="#contact"
-              className="bg-orange-400 text-white px-6 py-1 rounded-md  hover:transform hover:scale-105 transition-transform "
+              className="bg-orange-400 text-white text-center px-6 py-1 rounded-md  hover:transform hover:scale-105 transition-transform "
             >
               {t("profile.hire")}
             </a>
@@ -148,8 +148,8 @@ export default function Home() {
           <div className="bg-[#111] p-6 rounded-sm flex flex-col  gap-2 md:flex-row items-center justify-center text-white shadow-lg">
             {/* Block 1 */}
             <div className="flex flex-col items-center md:items-start px-6 gap-2">
-              <h2 className="text-2xl font-bold text-orange-500">
-                <NumberTicker value={0} />
+              <h2 className="text-2xl font-bold ">
+                <NumberTicker value={0} className="text-white" />
               </h2>
               <p className="text-sm text-gray-300">
                 {t("profile.experiences")}
@@ -161,8 +161,8 @@ export default function Home() {
 
             {/* Block 2 */}
             <div className="flex flex-col  items-center md:items-start px-6 gap-2">
-              <h2 className="text-2xl font-bold text-orange-500">
-                <NumberTicker value={6} />
+              <h2 className="text-2xl font-bold ">
+                <NumberTicker value={6} className="text-white" />
               </h2>
               <p className="text-sm text-gray-300">{t("profile.projects")}</p>
             </div>
@@ -172,8 +172,8 @@ export default function Home() {
 
             {/* Block 3 */}
             <div className="flex flex-col  items-center md:items-start px-6 gap-2">
-              <h2 className="text-2xl font-bold text-orange-500">
-                <NumberTicker value={public_repos} />
+              <h2 className="text-2xl font-bold">
+                <NumberTicker value={public_repos} className="text-white" />
               </h2>
               <p className="text-sm text-gray-300">
                 {t("profile.repositories")}

@@ -6,7 +6,6 @@
 - React
 - Tailwind CSS
 - Framer Motion
-- Three.js
 - shadcn/ui
 
 ## 🖼️ Live Preview

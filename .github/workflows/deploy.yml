@@ -20,7 +20,12 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd portfolio-thadthon
+            cd portfolio-thadthon || exit 1
             git pull origin main
-            docker-compose down || true
+
+            echo "🧹 Clean up old containers"
+            docker-compose down --remove-orphans || true
+            docker container rm -f vite-frontend || true
+
+            echo "🚀 Build and start new container"
             docker-compose up -d --build

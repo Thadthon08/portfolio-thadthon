@@ -15,9 +15,12 @@ export default function Toolbar() {
       <div className="flex items-center justify-between h-16 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <h1 className="text-xl font-extrabold uppercase">
+          <a
+            href="#home"
+            className="text-xl font-extrabold uppercase cursor-pointer"
+          >
             <AuroraText colors={["#f97316", "#f59e0b"]}>Logo</AuroraText>
-          </h1>
+          </a>
         </div>
 
         {/* Desktop Menu */}
@@ -75,9 +78,12 @@ export default function Toolbar() {
           {/* Mode Toggle */}
           <ModeToggle />
           {/* Hire Button */}
-          <button className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 ">
+          <a
+            href="#contact"
+            className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 "
+          >
             {t("menu.hire")}
-          </button>
+          </a>
         </div>
 
         {/* Mobile menu button */}

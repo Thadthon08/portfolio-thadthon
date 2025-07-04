@@ -1,3 +1,4 @@
+import { NumberTicker } from "@/components/magicui/number-ticker";
 import { ShinyButton } from "@/components/magicui/shiny-button";
 import { WordRotate } from "@/components/magicui/word-rotate";
 import { motion } from "framer-motion";
@@ -123,17 +124,33 @@ export default function Home() {
             </Button>
           </div>
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-orange-400 text-white px-6 py-1 rounded-md  hover:transform hover:scale-105 transition-transform ">
+            <a
+              href="#contact"
+              className="bg-orange-400 text-white px-6 py-1 rounded-md  hover:transform hover:scale-105 transition-transform "
+            >
               {t("profile.hire")}
-            </button>
-            <ShinyButton className="border-2 border-black  dark:border-white text-white px-6 py-1 rounded-md  hover:transform hover:scale-105 transition-transform duration-300">
+            </a>
+            <ShinyButton
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href =
+                  "https://drive.google.com/uc?export=download&id=1hjfLZ-Eoiet9amknfwsOqIXOxsDLu_t3";
+                link.download = "Thadthon_Sangkhachon_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="border-2 border-black dark:border-white text-white px-6 py-1 rounded-md hover:transform hover:scale-105 transition-transform duration-300"
+            >
               {t("profile.download_cv")}
             </ShinyButton>
           </div>
           <div className="bg-[#111] p-6 rounded-sm flex flex-col  gap-2 md:flex-row items-center justify-center text-white shadow-lg">
             {/* Block 1 */}
             <div className="flex flex-col items-center md:items-start px-6 gap-2">
-              <h2 className="text-2xl font-bold text-orange-500">5+</h2>
+              <h2 className="text-2xl font-bold text-orange-500">
+                <NumberTicker value={0} />
+              </h2>
               <p className="text-sm text-gray-300">
                 {t("profile.experiences")}
               </p>
@@ -144,7 +161,9 @@ export default function Home() {
 
             {/* Block 2 */}
             <div className="flex flex-col  items-center md:items-start px-6 gap-2">
-              <h2 className="text-2xl font-bold text-orange-500">20+</h2>
+              <h2 className="text-2xl font-bold text-orange-500">
+                <NumberTicker value={6} />
+              </h2>
               <p className="text-sm text-gray-300">{t("profile.projects")}</p>
             </div>
 
@@ -154,7 +173,7 @@ export default function Home() {
             {/* Block 3 */}
             <div className="flex flex-col  items-center md:items-start px-6 gap-2">
               <h2 className="text-2xl font-bold text-orange-500">
-                {public_repos}
+                <NumberTicker value={public_repos} />
               </h2>
               <p className="text-sm text-gray-300">
                 {t("profile.repositories")}

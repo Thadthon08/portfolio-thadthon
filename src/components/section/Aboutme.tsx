@@ -79,7 +79,8 @@ export default function Aboutme() {
           {/* CTA Button */}
           <div className="mt-6">
             <a
-              href="#contact"
+              href="https://drive.google.com/uc?export=download&id=1hjfLZ-Eoiet9amknfwsOqIXOxsDLu_t3"
+              download="Thadthon_Sangkhachon_Resume.pdf"
               className="inline-block bg-orange-400 text-white px-6 py-2 rounded-full font-medium hover:bg-orange-500 transition"
             >
               {t("about.download_cv")}

@@ -68,11 +68,9 @@ export default function Portfolio() {
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.1 }}
+            key={item.id}
           >
-            <NeonGradientCard
-              key={item.id}
-              className="transition-transform duration-300 hover:scale-[1.03]"
-            >
+            <NeonGradientCard className="transition-transform duration-300 hover:scale-[1.03]">
               <div className="space-y-3 ">
                 {/* image */}
                 <div className="h-56 overflow-hidden rounded-xl relative group">

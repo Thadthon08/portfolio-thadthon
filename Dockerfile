@@ -1,16 +1,13 @@
-# Base image
 FROM node:22-alpine
 
-# Set working directory
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
+RUN npm install --verbose
 
 # Copy source code
 COPY . .
 
-# Build Vite app
 RUN npm run build
 
 # Use NGINX to serve the app
